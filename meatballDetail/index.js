@@ -1,20 +1,5 @@
 function meatBall (meat, flour, water, recipe) {
-    const x = meat/recipe.meat;
-    const y = flour/recipe.flour;
-    const z = water/recipe.water;
-    const meatBallCanMake = Math.floor(Math.min(x, y, z));
-    if (x==meatBallCanMake&&y==meatBallCanMake&&z==meatBallCanMake) {
-        return `${meatBallCanMake} meat ball`;
-    } else {
-        let text = `${meatBallCanMake} meat ball with` 
-            + `${x==meatBallCanMake?"":" "+(meat-(meatBallCanMake*recipe.meat))+" meat,"}`
-            + `${y==meatBallCanMake?"":" "+(flour-(meatBallCanMake*recipe.flour))+" flour,"}`
-            + `${z==meatBallCanMake?"":" "+(water-(meatBallCanMake*recipe.water))+" water,"}`
-        let textList = text.split(",");
-        if (textList.length>2) textList[textList.length-2] = ' and' + `${textList[textList.length-2]}`;
-        if (textList.length>3) return textList.join(",").slice(0, -1) + ' remain';
-        else return textList.join("") + ' remain';
-    }
+    // CODE HERE
 }
 
 function test(fun, result) {

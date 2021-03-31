@@ -1,5 +1,8 @@
 function meatBall (meat, flour, water, recipe) {
-    // CODE HERE
+    const x = meat/recipe.meat;
+    const y = flour/recipe.flour;
+    const z = water/recipe.water;
+    return Math.floor(Math.min(x, y, z)) + ' meat ball';
 }
 
 function test(fun, result) {
