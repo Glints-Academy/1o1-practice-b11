@@ -3,7 +3,6 @@ const data = require('./initialData')
 
 const main = (data, color) => {
   // Code here
-  return data[data.findIndex(item => item.houseColor === color) + 1].name
 }
 
 
